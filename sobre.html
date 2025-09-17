@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS DO JQUERY E JQUERY MOBILE - CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Loja Tech</title>
+
+</head>
+<body>
+    <!-- INÍCIO DA PÁGINA -->
+    <div data-role="page">
+        <!-- INÍCIO DO CABEÇALHO -->
+        <header data-role="header" data-position="fixed">
+            <h1>
+                <img src="imagens/logo.png" alt="Logomarca Tech" class="logo">
+                LOJA TECH
+            </h1>
+
+            <!-- INÍCIO DA NAVEGAÇÃO PRINCIPAL -->
+            <nav data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html" data-transition="slide" class="ui-btn ui-btn-icon-left ui-icon-home ui-btn-inline">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" data-transition="slide" class="ui-btn ui-btn-icon-left ui-icon-heart ui-btn-inline">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html" data-transition="slide" class="ui-btn ui-btn-b">Ver Produtos</a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html" data-transition="slide" class="ui-btn ui-btn-icon-left ui-icon-shop ui-btn-inline">Carrinho <span class="cart-badge" id="cart-count">(0)</span></a>
+                    </li>
+                    <li>
+                        <a href="contato.html" data-transition="slide" class="ui-btn ui-btn-icon-left ui-icon-user ui-btn-inline">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- FIM DA NAVEGAÇÃO PRINCIPAL -->
+        </header>
+        <!-- FIM DO CABEÇALHO -->
+
+        <!-- INÍCIO DA ÁREA DE CONTEÚDO -->
+        <div data-role="content" class="ui-content ui-body ui-body-a ui-corner-all ui-shadow ui-responsive">
+            <section class="conteudo">
+                <h2>Quem Somos</h2>
+                <p>
+                    A <strong>LOJA TECH</strong> nasceu com o propósito de oferecer soluções tecnológicas modernas e acessíveis 
+                    para pessoas e empresas que buscam inovação, qualidade e confiança. Nosso compromisso é estar sempre à frente das 
+                    tendências do mercado, trazendo equipamentos, softwares e serviços que transformam o dia a dia dos nossos clientes.
+                </p>
+
+                <h2>Missão</h2>
+                <p>
+                    Proporcionar acesso à tecnologia de ponta, com qualidade, inovação e atendimento personalizado, ajudando nossos clientes 
+                    a alcançar seus objetivos pessoais e profissionais.
+                </p>
+
+                <h2>Visão</h2>
+                <p>
+                    Ser referência em soluções tecnológicas no mercado nacional, reconhecida pela excelência em atendimento, inovação contínua 
+                    e impacto positivo na vida de nossos clientes.
+                </p>
+
+                <h2>Valores</h2>
+                <ul data-role="listview" data-inset="true">
+                    <li><strong>Inovação:</strong> buscamos constantemente novidades e melhorias.</li>
+                    <li><strong>Confiança:</strong> atuamos com transparência e responsabilidade.</li>
+                    <li><strong>Qualidade:</strong> oferecemos apenas produtos e serviços de alto padrão.</li>
+                    <li><strong>Atendimento humano:</strong> valorizamos a proximidade e a escuta ativa.</li>
+                    <li><strong>Sustentabilidade:</strong> respeitamos o meio ambiente e incentivamos práticas conscientes.</li>
+                </ul>
+                
+            </section>
+        </div>
+        <!-- FIM DA ÁREA DE CONTEÚDO -->
+
+        <!-- INÍCIO DO RODAPÉ -->
+        <div>
+            <footer data-role="footer" data-position="fixed">
+                <h4>&#169 Loja Tech-Todos os Direitos Reservados - 2025</h4>
+            </footer>
+        </div>
+        <!-- FIM DO RODAPÉ -->
+        
+    </div>
+    <!-- FIM DA PÁGINA -->
+    
+</body>
+</html>

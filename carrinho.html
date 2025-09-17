@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <title>Loja de Tecnologia - Carrinho</title>
+</head>
+<body>
+  <div data-role="page" id="carrinhoPage">
+    <header data-role="header" data-position="fixed">
+      <h1>
+        <img src="imagens/logo.PNG" alt="Logomarca Tech" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        LOJA TECH
+      </h1>
+      <nav data-role="navbar">
+        <ul>
+          <li><a href="index.html" data-transition="slide" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-home">Home</a></li>
+          <li><a href="sobre.html" data-transition="slide" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-heart">Sobre</a></li>
+          <li><a href="produtos.html" data-transition="slide" class="ui-btn ui-btn-b">Ver Produtos</a></li>
+          <li><a href="carrinho.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-shop ui-btn-active">Carrinho <span class="cart-badge" id="cart-count">(0)</span></a></li>
+          <li><a href="contato.html" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-user">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div role="main" class="ui-content">
+      <section>
+        <h2 style="text-align:center;">Meu Carrinho</h2>
+
+        <table data-role="table" class="ui-responsive ui-shadow tabela-centro" id="cart-table">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Qtd</th>
+              <th>Preço</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <h3 style="text-align:center; margin-top:20px;">Total: <span id="cart-total">R$ 0,00</span></h3>
+
+        <div style="text-align:center; margin-top:20px;">
+          <a href="produtos.html" data-role="button" data-icon="back">Adicionar Mais Produtos</a>
+          <a href="#" data-role="button" data-icon="delete" data-theme="a" onclick="salvarCarrinho([]); atualizarCarrinho([]);">Esvaziar Carrinho</a>
+          <a href="recibo.html" id="btnFinalizar" data-role="button" data-icon="check" data-theme="b" data-rel="dialog">Finalizar Compra</a>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <footer data-role="footer" data-position="fixed">
+        <h4>© Loja Tech • Atendimento: contato@lojatech.ex</h4>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
